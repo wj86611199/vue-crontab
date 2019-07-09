@@ -2,13 +2,13 @@
   "name": "crontab",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://wj86611199.github.io/vue-crontab",
+  "homepage": "https://wj86611199.github.io/vue-crontab",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages  -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages  -d dist"
   },
   "dependencies": {
     "core-js": "^2.6.5",

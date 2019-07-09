@@ -20,7 +20,7 @@ export default {
   },
   data() {
     return {
-      crontab: "*/10 0 0 ? 10 3 *"
+      crontab: "0/10 0 0 ? 10 3 *"
     };
   },
   methods: {
