@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import cron from "./cron/index";
+import cron from "./cron/index.vue";
 export default {
   name: "HelloWorld",
   props: {
