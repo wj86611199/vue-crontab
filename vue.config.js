@@ -5,7 +5,7 @@ const path = require("path");
 const resolve = dir => require("path").join(__dirname, dir);
 
 // 增加环境变量
-let publicPath = "/";
+let publicPath = "./";
 
  const Timestamp = new Date().getTime();
  module.exports = {
@@ -42,22 +42,6 @@ let publicPath = "/";
         config => config.devtool("cheap-source-map")
       )
       // 非开发环境
-      .when(process.env.NODE_ENV !== "development", config => {
-        config.optimization.minimizer([
-          new UglifyJsPlugin({
-            uglifyOptions: {
-              // 移除 console
-              // 其它优化选项 https://segmentfault.com/a/1190000010874406
-              compress: {
-                warnings: false,
-                drop_console: true,
-                drop_debugger: true,
-                pure_funcs: ["console.log"]
-              }
-            }
-          })
-        ]);
-      });
     // i18n
     config.module
       .rule("i18n")
