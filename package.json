@@ -1,6 +1,6 @@
 {
-  "name": "vue-crontab",
-  "version": "0.1.0",
+  "name": "v-cron",
+  "version": "0.1.1",
   "private": false,
   "homepage": "https://wj86611199.github.io/vue-crontab",
   "scripts": {

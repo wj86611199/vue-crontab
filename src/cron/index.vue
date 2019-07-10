@@ -43,7 +43,7 @@ import cronTime from "./time";
 import cronWeek from "./week";
 import cronYear from "./year";
 export default {
-  name: "vue-crontab",
+  name: "vCron",
   props: {
     data: {
       type: String,
